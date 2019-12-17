@@ -1,0 +1,47 @@
+{
+  "name": "typlayer",
+  "version": "0.0.1",
+  "description": "html5 video 播放器",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --config build/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --config build/webpack.config.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --progress --config build/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulies/typlayer.git"
+  },
+  "keywords": [
+    "video",
+    "player",
+    "html5"
+  ],
+  "author": "王嘉炀",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tulies/typlayer/issues"
+  },
+  "homepage": "https://github.com/tulies/typlayer#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.0",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
+  }
+}
