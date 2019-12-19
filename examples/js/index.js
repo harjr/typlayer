@@ -6,5 +6,3 @@ TYPlayer.instance('typlayer', {
 }, function () {
   console.log(111)
 })
-
-// "typings": "types/index.d.ts",

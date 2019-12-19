@@ -24,6 +24,7 @@
     "url": "https://github.com/harjr/typlayer/issues"
   },
   "homepage": "https://github.com/harjr/typlayer#readme",
+  "typings": "types/index.d.ts",
   "devDependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
