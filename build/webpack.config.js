@@ -1,9 +1,8 @@
-
 const path = require('path')
-const webpack = require('webpack')
+// const webpack = require('webpack')
 // 清除文件
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
 // const merge = require('webpack-merge')
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -40,12 +39,12 @@ const config = {
         loader: 'eslint-loader',
         exclude: /node_modules|utils/,
         enforce: 'pre' // 预处理，之前先做校验
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
       }
-      // {
-      //   test: /\.js$/,
-      //   loader: 'babel-loader',
-      //   exclude: /node_modules/
-      // }
       // {
       //   test: /\.tsx$/,
       //   loader: 'ts-loader',
@@ -53,16 +52,14 @@ const config = {
       // }
     ]
   },
-  // devTool: '#cheap-modsule-eval-source-map',  // webpack4中貌似不需要
-  devtool: 'source-map',
+  // devtool: 'source-map',
   plugins: [
-    new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'video test',
-      template: './src/template/index.html', // Load a custom template
-      inject: 'body' // Inject all scripts into the body
-    })
+    // new webpack.HotModuleReplacementPlugin(),
+    // 删除文件 保留新文件
+    // new CleanWebpackPlugin({
+    //   dry: false,
+    //   verbose: true
+    // })
   ]
 }
 // config = merge(config, devConfig)
