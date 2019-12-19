@@ -1,3 +1,4 @@
+
 console.log(TYPlayer)
 TYPlayer.instance('typlayer', {
   width: '100px',
@@ -5,3 +6,5 @@ TYPlayer.instance('typlayer', {
 }, function () {
   console.log(111)
 })
+
+// "typings": "types/index.d.ts",
