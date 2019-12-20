@@ -52,7 +52,7 @@ const config = {
       // }
     ]
   },
-  // devtool: 'source-map',
+  devtool: 'source-map',
   plugins: [
     // new webpack.HotModuleReplacementPlugin(),
     // 删除文件 保留新文件
